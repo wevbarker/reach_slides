@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+\urlstyle{same}
+\usepackage[margin=2cm]{geometry}
+\renewcommand\familydefault{\sfdefault}
+\begin{document}
+
+\title{Physics \& Astronomy Week 1}
+\date{}
+\maketitle
+So Genny said these students were aged 14-18. The topics I suggest would be suitable for the most engaged students about to leave school and really interested in modern physics, so this stuff represents an upper bound. I'll need to fill in a lot of detailed qualitative things suitable for all ages/abilities. I was worried some of this was too hard, but in your email (Graham) I see that previous years were taught about QED, virtual particles, and the golden age of GR, so I think it should be ok\ldots? Qualitative means that although I'll give them the equations, they only need to get the gist of it. Quantitative means they should understand it fully. Worked example, I have an idea of splitting them into groups and performing specific steps in a derivation. So long as I have a projector I can hook up my laptop and simulate a lot of things, too.
+\begin{itemize}
+  \item Seminar 1: Calculus
+    \begin{itemize}
+      \item Qualitative understanding of derivative and antiderivative, chain and product rules, illustrate with gradients, areas etc.
+      \item Quantitative understanding of differentiating a polynomial
+      \item Qualitative understanding of differential equations: their importance in physics, ODE examples, PDE examples, heat equation and Schr\"odinger equation, show some simulations of solutions
+      \item Worked example: they can try to construct a coupled first order system for a predator and prey population, decay of isotopes, and I can write some script to simulate whatever they suggest -- should give some fun results
+    \end{itemize}
+  \item Seminar 2: Classical mechanics
+    \begin{itemize}
+      \item Quantitative understanding: Newton's laws
+      \item Quantitative understanding: classical energy and momentum
+      \item Worked example: get them to show conservation laws using calculus and Newton's laws
+      \item Worked example: get them to show Keplarian motion (useful for GR/Schwarzschild comparison later)
+      \item Qualitative understanding: Lagrangian \& Hamiltonian formalisms
+      \item Worked example: pendulum, constuct the harmonic ODE etc.
+      \item Something to do with rockets is probably a good idea\ldots
+    \end{itemize}
+  \item Seminar 3: Special relativity
+    \begin{itemize}
+      \item Qualitative understanding of Minkowski spacetime, light cones, Lorentz transformations, length-contraction and time-dilation, doppler effects
+      \item Quantitative understanding: realtivistic energy-momentum
+      \item Worked example: get them all to show what happens to a uniformly-accelerating spaceship, how it never reaches $c$, how the astronauts age more slowly etc.
+    \end{itemize}
+  \item Seminar 4: Electromagnetism
+    \begin{itemize}
+      \item Qualitative understanding of vectors, scalars, tensors (not too deep\ldots)
+      \item Qualitative understanding of the Maxwell equations
+      \item Worked example: get them from $c\nabla\times\mathbf{E}=-\dot{\mathbf{B}}$ and $c\nabla\times\mathbf{B}=-\dot{\mathbf{E}}$ to predicting electromagnetic waves moving at $c$
+      \item Some students might be interested in where Maxwell equations come from, could talk about how all modern field theories obey the Hamilton principle mentioned in the classical mechanics session, mention $\mathcal{  F}^{ab}\mathcal{  F}_{ab}$ etc.
+    \end{itemize}
+  \item Seminar 5: General relativity
+    \begin{itemize}
+      \item Qualitative understanding of Riemann spacetime, curvature
+      \item Qualitative understanding of $\mathcal{  G}_{ab}=\kappa \mathcal{  T}_{ab}$ and $u_a \mathcal{  D}^a u_b=0$, get them happy at least to the level of: \textit{“matter tells spacetime how to curve, spacetime tells matter how to move“}. We can go over the anatomy of the stress-energy tensor without needing to introduce tensor-calculus (e.g. discussing the Einstein equations as if they were many equations, one for each space-time direction), give some examples (empty space, dust, gas)
+      \item Qualitative comparison with electromagnetism: field equations as field strenghts depending on source currents, gravitoelectromagnetism. Some students might interested in covariant formulation, Einstein-Hilbert action and comparison with $\mathcal{  F}^{ab}\mathcal{  F}_{ab}$
+      \item Qualitative understanding of Schwarzschild spacetime: classical regime, event horizon, singularity, neutron stars and black holes
+      \item Worked example: from geodesic equations they can show what happens when you fall into a Schwarzschild black hole
+      \item Qualitative understanding of FRW spacetime, how a universe can be finite, infinite or superinfinite in physical size, how that size can change, Friedmann equations
+      \item Qualitative understanding of open problems: flatness problem/infaltion, dark matter in the context of the classical mechanics from earlier and galactic rotation curves, dark energy
+      \item Worked example: they can prove the expansion and acceleration of the universe from the Friedmann equations just through substitution, and predict the big bang beginning and de-Sitter ending
+    \end{itemize}
+\end{itemize}
+\end{document}

@@ -1,0 +1,485 @@
+\documentclass{beamer}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx}
+\usetheme{CambridgeUS}
+\useinnertheme{circles}
+
+\usefonttheme[onlymath]{serif} 
+ 
+%Information to be included in the title page:
+
+\title{Seminar 4}
+\subtitle{Special relativity}
+
+\author{Will Barker\inst{1}\inst{2}}
+\institute{
+  \inst{1}%
+    Cavendish Laboratory\\
+    University of Cambridge\\
+  \inst{2}%
+    Kavli Institute for Cosmology\\
+    University of Cambridge\\
+}
+\date{}
+\logo{%
+  \makebox[0.95\paperwidth]{%
+    \includegraphics[height=0.7cm,keepaspectratio]{CU.eps}%
+    \hfill%
+    \includegraphics[height=0.7cm,keepaspectratio]{logo.png}%
+  }%
+}
+ 
+ 
+ 
+\begin{document}
+ 
+\frame{\titlepage}
+ 
+\begin{frame}
+  \frametitle{What is special relativity?}
+  \begin{itemize}
+    \item<1-> Most importanty the \textbf{regime} $v\sim c$
+    \item<2-> This regime tends to \textbf{break} classical laws of phyics:
+      \begin{itemize}
+	\item<3-> \textbf{quantum mechanics}\to\textbf{quantum field theory}
+	\item<4-> \textbf{classical mechanics}\to\textbf{relativistic mechanics}
+      \end{itemize}
+    \item<5-> Three space dimensions and one time dimension are \textbf{aspects} of a connected whole known as \textbf{spacetime}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Special vs general relativity}
+  \begin{itemize}
+    \item<1-> What is the difference between \textbf{special} and \textbf{general} relativity?
+    \item<2-> \textbf{General relativity} is needed when there is enough \textbf{mass}, \textbf{energy}, \textbf{momentum} or \textbf{stress} (or when the \textbf{densities} of these are high enough) that there is some \textbf{gravity} involved
+    \item<3-> What does that mean about the \textbf{shape} of spacetime?
+      \begin{itemize}
+	\item<4-> \textbf{Special relativity}\to\textbf{flat spacetime}
+	\item<5-> \textbf{General relativity}\to\textbf{curved spacetime}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Special vs general relativity}
+  \begin{itemize}
+    \item<1-> The \textbf{three} dimensional space we all live in is known as \textbf{Euclidean} space
+    \item<2-> \textbf{Euclidean} space has some properties you are all very \textbf{familiar} with, but which we need to describe \textbf{mathematically} in order to compare with \textbf{non-Euclidean} space (i.e. \textbf{four} dimensional spacetime):
+      \begin{itemize}
+	\item<3-> We can \textbf{rotate} the space
+	\item<4-> We can define \textbf{distances} which don't change when we \textbf{rotate} the space
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{We want everything simple\ldots}
+  \begin{itemize}
+    \item<1-> We will only deal with \textbf{two} dimensions at a time, otherwise everything will become very complicated!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euclidean rotations}
+  \begin{itemize}
+    \item<1-> Start with \textbf{two} ordinary space dimensions and coordinates $x$ and $y$, what is a \textbf{vector} which describes a \textbf{position} in that space?
+    \item<2-> Should have:
+      \begin{align*}
+	\mathbf{x}=
+	\begin{bmatrix}
+	  x\\
+	  y
+	\end{bmatrix}
+      \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euclidean rotations}
+  \begin{itemize}
+    \item<1-> Now we need to introduce \textbf{matrices}!
+    \item<2-> Just a \textbf{table} of numbers:
+      \begin{align*}
+	\mathbf{R}=
+	\begin{bmatrix}
+	  a & b\\
+	  c & d
+	\end{bmatrix}
+      \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euclidean rotations}
+  \begin{itemize}
+    \item<1-> Now we \textbf{multiply} a \textbf{vector} by a \textbf{matrix}!
+    \item<2-> Here is the \textbf{rule} for doing this:
+      \begin{align*}
+	\begin{bmatrix}
+	  x'\\
+	  y'
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	  a & b\\
+	  c & d
+	\end{bmatrix}
+	\begin{bmatrix}
+	  x\\
+	  y
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	 ax+by\\
+	 cx+dy
+	\end{bmatrix}
+      \end{align*}
+    \item<3-> \textbf{WRITE THIS DOWN, YOU WILL NEED IT}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euclidean rotations}
+  \begin{itemize}
+    \item<1-> \textbf{Over to you}: find $x'$ and $y'$ if:
+      \begin{align*}
+	\mathbf{R}=
+	\begin{bmatrix}
+	  \hphantom{-}\cos(\theta) & \sin(\theta)\\
+	  -\sin(\theta) & \cos(\theta)
+	\end{bmatrix}
+	, \quad
+	\mathbf{x}=
+	\begin{bmatrix}
+	  1\\
+	  0
+	\end{bmatrix}
+      \end{align*}
+    \item<2-> Emre: $\theta=10^\circ$, Mason: $\theta=360^\circ$, Ali Goktug: $\theta=45^\circ$, Claudia: $\theta=70^\circ$, Federico: $\theta=180^\circ$, Beltran: $\theta=270^\circ$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euclidean rotations}
+  \begin{itemize}
+    \item<1-> \textbf{Still over to you}: Now find $\sqrt{x'^2+y'^2}$ for these new vectors!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euclidean rotations}
+  \begin{itemize}
+    \item<1-> We should have found the following \textbf{exciting} things:
+      \begin{itemize}
+	\item<2-> The matrix \textbf{R} just \textbf{rotates} the position in space through the \textbf{angle}
+	\item<3-> This leaves the \textbf{distance} from the origin \textbf{unchanged}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euclidean rotations}
+  \begin{itemize}
+    \item<1-> So we can say this about \textbf{Euclidean} space:
+      \begin{itemize}
+	\item<2-> \textbf{Rotations} are done with \textbf{trigonometric} functions $\sin(\theta)$ and $\cos(\theta)$
+	\item<3-> \textbf{Distances} are done like this: $\sqrt{x^2+y^2+z^2}$
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Galilean rotations}
+  \begin{itemize}
+    \item<1-> This was rather \textbf{boring} actually, it gets more interesting if we have one \textbf{space} dimension and one \textbf{time} dimension
+    \item<2-> It would be nice if we could set up this \textbf{two} dimensional space with coordinates which have the same \textbf{units}
+    \item<3-> Let's say \textbf{space} is just given by $x$, what would be a good coordinate for time?
+    \item<4-> So our new \textbf{position vector} is:
+      \begin{align*}
+	\mathbf{x}=
+	\begin{bmatrix}
+	  ct\\
+	  x
+	\end{bmatrix}
+      \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Galilean rotations}
+  \begin{itemize}
+    \item<1-> We've just started to put together the idea of \textbf{spacetime}!
+    \item<2-> Some important points:
+      \begin{itemize}
+	\item In \textbf{space} positions are usually known as \textbf{points}
+	\item In \textbf{spacetime} the positions are known as \textbf{events}
+      \end{itemize}
+    \item<3-> Why?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Galilean rotations}
+  \begin{itemize}
+    \item<1-> Now things begin getting complicated\ldots
+    \item<2-> Let's say we start moving along the $x$ direction at \textbf{constant} velocity $v$ (couldn't think of a simpler motion really\ldots)
+    \item<3-> At $t=0$, we were at $x=0$
+    \item<4-> What is our $x$ at general $t$?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Galilean rotations}
+  \begin{itemize}
+    \item<1-> Now things begin getting complicated\ldots
+    \item<2-> Let's say we start moving along the $x$ direction at \textbf{constant} velocity $v$ (couldn't think of a simpler motion really\ldots)
+    \item<3-> At $t=0$, we were at $x=0$
+    \item<4-> What is our $x$ at general $t$?
+    \item<4-> What is our $t$ at general $t$ (trick question!)?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Galilean rotations}
+  \begin{itemize}
+    \item<1-> With this in mind, how will we measure $t'$ and $x'$ of some \textbf{event}:
+      \begin{align*}
+	\mathbf{x}=
+	\begin{bmatrix}
+	  ct\\
+	  x
+	\end{bmatrix}
+      \end{align*}
+    \item<2-> Just using common sense, we should end up with these very simple formulae:
+      \begin{gather*}
+	t'=t,\\
+	x'=x-vt
+      \end{gather*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Galilean rotations}
+  \begin{itemize}
+    \item<1-> These are the formulae for \textbf{Galilean} transformations:
+      \begin{gather*}
+	t'=t,\\
+	x'=x-vt
+      \end{gather*}
+    \item<2-> You all already \textbf{knew these}: they just say that if you \textbf{move}, the \textbf{time} you observe an event is \textbf{the same}, but the position of the event \textbf{moves toward you} (or away if $v\to -v$)
+    \item<3-> Does anyone \textbf{disagree}?
+    \item<4-> These formulae are \textbf{completely and utterly wrong}, but nobody noticed until 1905!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Galilean rotations}
+  \begin{itemize}
+    \item<1-> Note that I used the word \textbf{transformations} for $t\to t'$ and $x\to x'$, but \textbf{rotations} for $x\to x'$ and $y\to y'$
+    \item<2-> That is because the idea of \textbf{rotating space} makes \textbf{perfect sense}, but \textbf{rotating space and time} sounds like \textbf{nonsense}\ldots
+    \item<3-> Let's do it anyway!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> \textbf{Over to you again}: find $t'$ and $x'$ if:
+      \begin{align*}
+	\mathbf{R}=
+	\begin{bmatrix}
+	  \frac{1}{\sqrt{1-v^2/c^2}} & \frac{-v/c}{\sqrt{1-v^2/c^2}}\\
+	  \frac{-v/c}{\sqrt{1-v^2/c^2}} & \frac{1}{\sqrt{1-v^2/c^2}}
+	\end{bmatrix}
+	, \quad
+	\mathbf{x}=
+	\begin{bmatrix}
+	  ct\\
+	  x
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	  1\\
+	  0
+	\end{bmatrix}
+      \end{align*}
+    \item<2-> Emre: $v=c$, Mason: $v=2c$, Ali Goktug: $v=0$, Claudia: $v=0.5c$, Federico: $v=0.2c$, Beltran: $v=0.1c$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> \textbf{Next task}: find $\sqrt{c^2t'^2-x'^2}$ for your vectors!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> \textbf{Now find this}:
+      \begin{equation*}
+	\left( \frac{1}{\sqrt{1-v^2/c^2}} \right)^2-\left( \frac{-v/c}{\sqrt{1-v^2/c^2}} \right)^2
+      \end{equation*}
+    \item<2-> \textbf{Finally who can remember what this is} for any $\psi$:
+      \begin{equation*}
+	\cosh(\psi)^2-\sinh(\psi)^2
+      \end{equation*}
+    \item<3-> Claudia: $\psi$ is another Greek letter pronounced `psi' ;) 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> So it turns out we can just write that horrible matrix in a simple form:
+      \begin{align*}
+	\mathbf{R}=
+	\begin{bmatrix}
+	  \frac{1}{\sqrt{1-v^2/c^2}} & \frac{-v/c}{\sqrt{1-v^2/c^2}}\\
+	  \frac{-v/c}{\sqrt{1-v^2/c^2}} & \frac{1}{\sqrt{1-v^2/c^2}}
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	  \cosh(\psi) & \sinh(\psi)\\
+	  \sinh(\psi) & \cosh(\psi)
+	\end{bmatrix}
+	=\mathbf{\Lambda}
+      \end{align*}
+    \item<2-> Claudia: $\Lambda$ is uppercase Greek letter `lambda', lowercase is $\lambda$ ;) 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> So unlike last time, the things we get now should actually be interesting:
+      \begin{itemize}
+	\item<2-> When we move, space and time \textbf{rotate}, but instead of \textbf{trigonometric} rotations with $\sin(\theta)$ and $\cos(\theta)$ for some angle $\theta$ we have \textbf{hyperbolic} rotations with \textbf{hyperbolic} functions $\sinh(\psi)$ and $\cosh(\psi)$ -- don't bother with what $\psi$ actually is, there is a formula for it in terms of $v/c$ (Mason, find $\psi(v/c)$)
+	\item<3-> The \textbf{distance} in spacetime is just $\sqrt{c^2t^2-x^2-y^2-z^2}$
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> Some long words:
+      \begin{itemize}
+	\item<2-> \textbf{Distance} in spacetime is known as the \textbf{interval} -- in the same sense that the \textbf{point} is known as an \textbf{event}
+	\item<3-> We did \textbf{trigonometric} rotations in \textbf{Euclidean space} -- the space we live in -- these \textbf{hyperbolic} rotations are in \textbf{Minkowskian spacetime}
+	\item<4-> \textbf{Minkowskian spacetime} is flat, but has a \textbf{negative metric signature} -- tomorrow (Seminar 5) we will look at general relativity, in which the metric signature is the same, but because there is \textbf{gravity} the spacetime is \textbf{curved}
+	\item<5-> You might want to look up some of these terms, but we don't have time (or the methematical development) to go into them
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> Note to self: find some Lorentz transformations on Youtube
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> But I didn't go into why any of this \textbf{hyperbolic/Lorentz} rotation stuff is true\ldots
+    \item<2-> In fact, we were happy with the simpler Galilean transformations before weren't we?
+    \item<3-> Go back to $t$ and $x$ (i.e. \textbf{two dimensional case}) -- what if the \textbf{event} was a photon being \textbf{emitted} in the past at $t<0$ and some position $x$, and detected by us ($v=0$) at the \textbf{origin} of spacetime ($t_0=0$ and $x_0=0$) \textbf{Find the interval for the photon}:
+      \begin{equation*}
+	\sqrt{c^2t^2-x^2}
+      \end{equation*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> We should find:
+      \begin{equation*}
+	\sqrt{c^2t^2-x^2}=0
+      \end{equation*}
+    \item<2-> This relies on the photon moving at $c$, right?
+    \item<3-> And even if we start moving at $v$ we just spent ages proving that the \textbf{interval} of the photon's motion remains \textbf{unchanged}:
+      \begin{equation*}
+	\sqrt{c^2t'^2-x'^2}=0
+      \end{equation*}
+    \item<4-> So when we are moving at $v$, \textbf{what is the speed of the photon}?
+    \item<5-> So all this \textbf{hyperbolic} rotation stuff just ensures that \textbf{the speed of light is the same, no matter how fast you are moving}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> Finally, we \textbf{Lorentz} rotations:
+      \begin{gather*}
+	ct'=\frac{ct}{\sqrt{1-v^2/c^2}}-\frac{vx/c}{\sqrt{1-v^2/c^2}},\\
+	x'=\frac{x}{\sqrt{1-v^2/c^2}}-\frac{vt}{\sqrt{1-v^2/c^2}},
+      \end{gather*}
+    \item<2-> And \textbf{Galilean} transformations:
+      \begin{gather*}
+	t'=t,\\
+	x'=x-vt,
+      \end{gather*}
+    \item<3-> \textbf{Explain why Galilean transformations are okay so long as} $v\ll c$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> We also have \textbf{relativistic} momentum:
+      \begin{gather*}
+	p=\frac{mv}{\sqrt{1-v^2/c^2}}
+      \end{gather*}
+    \item<2-> And \textbf{non-relativistic} momentum:
+      \begin{gather*}
+	p=mv
+      \end{gather*}
+    \item<3-> \textbf{Explain why they agree at} $v\ll c$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> Finally we have \textbf{relativistic} energy:
+      \begin{gather*}
+	\mathcal{  E}=\frac{mc^2}{\sqrt{1-v^2/c^2}}
+      \end{gather*}
+    \item<2-> \textbf{What happens at} $v\ll c$?
+    \item<3-> Should have \textbf{non-relativistic} energy:
+      \begin{gather*}
+	\mathcal{  E}=mc^2+\frac{1}{2}mv^2
+      \end{gather*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lorentz rotations}
+  \begin{itemize}
+    \item<1-> Should have \textbf{non-relativistic} energy:
+      \begin{gather*}
+	\mathcal{  E}=mc^2+\frac{1}{2}mv^2
+      \end{gather*}
+    \item<2-> What happens if the particle is standing still?
+      \begin{equation*}
+	\mathcal{  E}=mc^2
+      \end{equation*}
+    \item<3-> \textbf{The end.}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \center
+  \frametitle{Astrophysical phenomena}
+  \includegraphics[height=5cm]{einstein.jpg}
+\end{frame}
+
+\end{document}
+
+
